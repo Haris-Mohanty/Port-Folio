@@ -1,10 +1,14 @@
-import React from "react";
 import { useState, useEffect } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import logo from "../assets/img/logo.svg";
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const NavBar = () => {
+export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
-
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -26,17 +30,17 @@ const NavBar = () => {
   };
 
   return (
-    <>
-      <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Router>
+      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="#home">
-            <img src={"./../public/logo192.png"} />
+          <Navbar.Brand href="/">
+            <img src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="ms-auto">
               <Nav.Link
                 href="#home"
                 className={
@@ -46,7 +50,6 @@ const NavBar = () => {
               >
                 Home
               </Nav.Link>
-
               <Nav.Link
                 href="#skills"
                 className={
@@ -56,7 +59,6 @@ const NavBar = () => {
               >
                 Skills
               </Nav.Link>
-
               <Nav.Link
                 href="#projects"
                 className={
@@ -72,24 +74,24 @@ const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="#">
-                  <img src={""} />
+                  <img src={navIcon1} alt="" />
                 </a>
                 <a href="#">
-                  <img src={""} />
+                  <img src={navIcon2} alt="" />
                 </a>
                 <a href="#">
-                  <img src={""} />
+                  <img src={navIcon3} alt="" />
                 </a>
               </div>
-              <button className="vvd" onClick={() => console.log("Connect")}>
-                <span>Let's Connect</span>
-              </button>
+              <HashLink to="#connect">
+                <button className="vvd">
+                  <span>Let’s Connect</span>
+                </button>
+              </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </Router>
   );
 };
-
-export default NavBar;
