@@ -8,7 +8,7 @@ export const ProjectCard = ({ title, description, imgUrl, link }) => {
         <div className="proj-txtx">
           <a href={link} target="_blank">
             {title}
-            <h6>{description}</h6>
+            <h6>Click to visit...</h6>
           </a>
         </div>
       </div>
@@ -23,7 +23,7 @@ export const ProjectCard2 = ({ title, description, imgUrl, link }) => {
         <div className="proj-txtx">
           <a href={link} target="_blank">
             {title}
-            <h6></h6>
+            <h6>Click to visit...</h6>
           </a>
         </div>
       </div>

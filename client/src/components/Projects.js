@@ -6,6 +6,9 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
+import projImg9 from "../assets/img/project-img9.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -14,47 +17,50 @@ export const Projects = () => {
   const projects = [
     {
       title: "Education App Dev",
-      description: "Click to visit...",
       imgUrl: projImg1,
       link: "https://education-app-dev.netlify.app/",
     },
     {
       title: "Blood Hub App",
-      description: "Click to visit...",
       imgUrl: projImg2,
       link: "https://blood-hub.onrender.com",
     },
     {
       title: "School ERP System",
-      description: "Click to visit...",
       imgUrl: projImg3,
       link: "https://github.com/Haris-Mohanty/School-ERP-System",
     },
     {
       title: "Job Finder",
-      description: "Click to visit...",
       imgUrl: projImg4,
       link: "https://job-finder-app.onrender.com/api-doc/",
     },
     {
       title: "Image Cloud",
-      description: "Click to visit...",
       imgUrl: projImg5,
       link: "https://github.com/Haris-Mohanty/ImageCloud",
     },
     {
       title: "ChatGPT-X",
-      description: "Click to visit...",
       imgUrl: projImg6,
       link: "https://github.com/Haris-Mohanty/ChatGPT-X",
     },
   ];
   const projects1 = [
     {
-      title: "Education App Dev",
-      description: "Click to visit...",
-      imgUrl: projImg1,
-      link: "https://education-app-dev.netlify.app/",
+      title: "Netflix Clone",
+      imgUrl: projImg7,
+      link: "https://netflix-x2.netlify.app/",
+    },
+    {
+      title: "Spotify Clone",
+      imgUrl: projImg8,
+      link: "https://spotify-cl-music.netlify.app/",
+    },
+    {
+      title: "Flipkart Clone",
+      imgUrl: projImg9,
+      link: "phttps://flipkart-cl.netlify.app/",
     },
   ];
 
