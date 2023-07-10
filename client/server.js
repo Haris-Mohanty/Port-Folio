@@ -40,10 +40,22 @@ router.post("/contact", (req, res) => {
     from: process.env.EMAIL_ID,
     to: email,
     subject: "Contact Form Submission - Portfolio",
-    html: `<p>Name: ${name}</p>
+    html: `<h4>Check Your Details:<h4>
+           <p>Name: ${name}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>
-           <p>Message: ${message}</p>`,
+           <p>Message: ${message}</p>
+           <h3>Feel Free to Contact Me!</h3>
+           <a href="harismohanty8658@gmail.com">Email</a>
+           &nbsp;&nbsp;&nbsp;
+           <a href="harismohanty8658@gmail.com">Instagram</a>
+           &nbsp;&nbsp;&nbsp;
+           <a href="harismohanty8658@gmail.com">LinkedIn</a>
+           &nbsp;&nbsp;&nbsp;
+           <a href="harismohanty8658@gmail.com">Twitter</a>
+           &nbsp;&nbsp;&nbsp;
+           <a href="harismohanty8658@gmail.com">Facebook</a>
+           `,
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
