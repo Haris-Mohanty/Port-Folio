@@ -68,7 +68,6 @@ export const Banner = () => {
                     {`Hi! I'm Haris`}{" "}
                     <span
                       className="txt-rotate"
-                      dataPeriod="2000"
                       data-rotate='[ "Web Developer", "Web Designer", "Mern-stack developer
 " ]'
                     >
@@ -76,7 +75,12 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                  Driven MERN Stack Developer with a strong foundation in web development and a focus on creating robust and scalable applications. With hands-on experience in MongoDB, Express.js, React.js, and Node.js, I thrive in designing and implementing end-to-end solutions that deliver exceptional user experiences.
+                    Driven MERN Stack Developer with a strong foundation in web
+                    development and a focus on creating robust and scalable
+                    applications. With hands-on experience in MongoDB,
+                    Express.js, React.js, and Node.js, I thrive in designing and
+                    implementing end-to-end solutions that deliver exceptional
+                    user experiences.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
