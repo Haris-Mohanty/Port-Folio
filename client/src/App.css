@@ -255,11 +255,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(
-    90.21deg,
-    #145468 -25.91%,
-    #502A72 111.58%
-  );
+  background: linear-gradient(90.21deg, #145468 -25.91%, #502a72 111.58%);
   border: 1px solid rgba(206, 42, 239, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -313,9 +309,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 .txt-rotate > .wrap {
-  border-right: 0.10em solid #6d08e8;
+  border-right: 0.1em solid #6d08e8;
 }
-.txt-rotate{
+.txt-rotate {
   color: #6d08e8;
   font-size: 40px;
   font-family: cursive;
@@ -410,7 +406,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #14586C , #522B75 );
+  background: linear-gradient(90.21deg, #14586c, #522b75);
   top: 0;
   left: 0;
   z-index: -1;
@@ -442,7 +438,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #16a6d2 -5.91%, #7923c5 85.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -486,10 +482,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.proj-imgbx a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #14586c -5.91%, #7923c5 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {

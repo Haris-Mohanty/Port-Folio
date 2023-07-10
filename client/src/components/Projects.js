@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard, ProjectCard2 } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -10,34 +13,48 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Education App Dev",
+      description: "Click to visit...",
       imgUrl: projImg1,
+      link: "https://education-app-dev.netlify.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Blood Hub App",
+      description: "Click to visit...",
       imgUrl: projImg2,
+      link: "https://blood-hub.onrender.com",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "School ERP System",
+      description: "Click to visit...",
       imgUrl: projImg3,
+      link: "https://github.com/Haris-Mohanty/School-ERP-System",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Job Finder",
+      description: "Click to visit...",
+      imgUrl: projImg4,
+      link: "https://job-finder-app.onrender.com/api-doc/",
+    },
+    {
+      title: "Image Cloud",
+      description: "Click to visit...",
+      imgUrl: projImg5,
+      link: "https://github.com/Haris-Mohanty/ImageCloud",
+    },
+    {
+      title: "ChatGPT-X",
+      description: "Click to visit...",
+      imgUrl: projImg6,
+      link: "https://github.com/Haris-Mohanty/ChatGPT-X",
+    },
+  ];
+  const projects1 = [
+    {
+      title: "Education App Dev",
+      description: "Click to visit...",
       imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      link: "https://education-app-dev.netlify.app/",
     },
   ];
 
@@ -70,13 +87,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Full-Stack</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Front-end</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">About Me!</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -86,14 +103,21 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <Row>
+                        <Row className="animate__animated animate__fadeInLeft">
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>
+                        <Row className="animate__animated animate__fadeInRight">
+                          {projects1.map((project, index) => {
+                            return <ProjectCard2 key={index} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <p className="animate__animated animate__lightSpeedInLeft">
                           Welcome to my website! I'm a passionate and
                           experienced MERN-stack web developer, dedicated to
                           crafting robust and intuitive web applications. With a
@@ -140,11 +164,9 @@ export const Projects = () => {
                           discuss potential collaborations, please don't
                           hesitate to reach out. I'm excited to connect and
                           explore how we can bring your ideas to life.
-                        </p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Processing....
+                          <br />
+                          <br />
+                          Thank You!
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
