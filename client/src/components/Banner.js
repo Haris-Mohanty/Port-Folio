@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/header-img.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -11,8 +11,8 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "Mern-stack developer"];
-  const period = 2000;
+  const toRotate = ["A Mern-Stack Web Developer", "A Coder", "A Problem Solver"];
+  const period = 900;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -65,10 +65,10 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi! I'm Haris`}{" "}
+                    {`Hii ! I'm Haris Mohanty, `}{" "}
                     <span
                       className="txt-rotate"
-                      data-rotate='[ "Web Developer", "Web Designer", "Mern-stack developer
+                      data-rotate='[ "A Web Developer", "A Coder", "A Problem Solver
 " ]'
                     >
                       <span className="wrap">{text}</span>

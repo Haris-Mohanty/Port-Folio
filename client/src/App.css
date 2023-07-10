@@ -246,7 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("./assets/img/banner-bg1.png");
+  background-image: url("./assets/img/banner-bg.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -257,16 +257,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 8px 10px;
   background: linear-gradient(
     90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
+    #145468 -25.91%,
+    #502A72 111.58%
   );
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(206, 42, 239, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 63px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -313,7 +313,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 .txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
+  border-right: 0.10em solid #6d08e8;
+}
+.txt-rotate{
+  color: #6d08e8;
+  font-size: 40px;
+  font-family: cursive;
 }
 
 /************ Skills Css ************/
